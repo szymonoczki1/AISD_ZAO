@@ -45,7 +45,6 @@ class DecodeHuffman:
         return key
 
     def reverse_dict(self):
-        print(self.code_dict)
         for key, value in self.code_dict.items():
             key = self.parse_special_characters(key)
             self.rev_code_dict[value] = key
